@@ -11,8 +11,8 @@ RUN apt-get update && apt-get install -y \
     git \
     unzip
 
-# Baixa o AzuraCast
-RUN curl -fsSL https://github.com/AzuraCast/AzuraCast/releases/download/0.14.0/azuracast-docker.tar.gz -o azuracast-docker.tar.gz \
+# Baixa o AzuraCast (versão 0.19.0)
+RUN curl -fsSL https://github.com/AzuraCast/AzuraCast/archive/refs/tags/0.19.0.tar.gz -o azuracast-docker.tar.gz \
     && tar -xvzf azuracast-docker.tar.gz \
     && rm azuracast-docker.tar.gz
 
